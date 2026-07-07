@@ -1,0 +1,57 @@
+# Note
+#   - Input  : prices
+#   - Output : maximum profit, 0 if can't achieve
+
+# Brute-force
+#   - Double for loop to find the maximum result.
+#   - Time/Space: O(n^2), O(1)
+
+# How to better resolve it?
+#   Steps:
+#     1. define 3 variables: max_price=price[0], min_price=price[0], result = 0
+#     2. Iterate the prices
+#     3. if price > max_price, then max_price = price, min_price = price
+#     4. if price < min_price, then min_price = price
+#     5. calculate max(result, max_price - min_price)
+#     6. return result
+#   Time/Space: O(n), O(1)
+
+# Coding
+# def solve(prices):
+#     buy min, sell max
+#     max_price, min_price, result = price[0], price[0], 0
+#     for i in range(1, len(prices)):
+#         price = prices[i]
+#
+#         if price < min_price:
+#             min_price = price
+#             max_price = price
+#         elif price > max_price:
+#             max_price = price
+#
+#         result = max(result, max_price - min_price)
+#     return result
+
+# Dry run
+#   1. prices = [7,1,5,3,6,4]
+#        - init, max_price=7, min_price=7, result=0
+#        - i=1, price=1, 1<min_price, max_price=1, min_price=1, result=0
+#        - i=2, price=5, 5>max_price, max_price=5, min_price=1, result=4
+#        - i=3, price=3, skip       , max_price=5, min_price=1, result=4
+#        - i=4, price=6, 6>max_price, max_price=6, min_price=1, result=5
+#        - i=5, price=4, skip       , max_price=6, min_price=1, result=5
+#
+#   2. prices = [7,6,4,3,1]
+#        - init, max_price=7, min_price=7, result=0
+#        - i=1, price=6, 6<min_price, max_price=6, min_price=6, result=0
+#        - i=2, price=4, 4<min_price, max_price=4, min_price=4, result=0
+#        - i=3, price=3, 3<min_price, max_price=3, min_price=3, result=0
+#        - i=4, price=1, 1<min_price, max_price=1, min_price=1, result=0
+
+# Consider edge cases
+#   1. prices = [1, 7]
+#        - init, max_price=1, min_price=1, result=0
+#        - i=1, price=7, 7>max_price, max_price=7, min_price=1, result=6
+
+# Improvement
+#   - max_price is unnecessary. Only need to maintain `min_price` and `result`
