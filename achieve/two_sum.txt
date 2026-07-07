@@ -1,0 +1,40 @@
+# Note:
+#   - Input      : num, t
+#   - Output     : [idx1, idx2], nums[idx1] + nums[idx2] = t
+#   - Assumption : The problem guarantees exactly one valid answer, so returning [] is only for safety.
+
+# Brute-force:
+#   Iterate nums starting from the first element, and check if the sum of the two elements in nums equals t.
+#   Time/Space: O(n^2), O(1)
+
+# How to better resolve it? Hashmap
+# 1. Build the hashmap: {num: index}. At the same time, check if t - num is in the hashmap.
+# 2. Time/Space: O(n), O(n)
+
+# Trade-off:
+# The hashmap solution improves time complexity from O(n^2) to O(n), but uses O(n) extra space.
+
+# Coding
+def solve(nums, t):
+    seen = {}
+    for idx, num in enumerate(nums):
+        if t - num in seen:
+            return [idx, seen[t - num]]
+        else:
+            seen[num] = idx
+    return []
+
+# Dry run
+#   1. nums = [2,7,11,15], target = 9
+#        - 2 -> 9-2 not in seem -> seem[2] = 0
+#        - 7 -> 9-7 in seem -> return [1, 0]
+#
+#   2. nums = [2, 3, 4], target = 8
+#        - 2 -> 8-2 not in seem -> seem[2] = 0
+#        - 3 -> 8-3 not in seem -> seem[3] = 1
+#        - 4 -> 8-4 not in seem -> seem[4] = 2
+
+# Consider edge cases
+#   1. nums = [3,3], target = 6
+#        - 3 -> 6-3 not in seem -> seem[3] = 0
+#        - 3 -> 6-3 in seem -> return [1, 0]
