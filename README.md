@@ -15,9 +15,9 @@
 ## Week 1 - HashMap / Array / String
 
 ### Day 1
-- [ ] HashMap | Two Sum | Easy
-- [ ] Array | Best Time to Buy and Sell Stock | Easy
-- [ ] String | Valid Anagram | Easy
+- [x] HashMap | Two Sum | Easy
+- [x] Array | Best Time to Buy and Sell Stock | Easy
+- [x] String | Valid Anagram | Easy
 
 ### Day 2
 - [ ] HashMap | Contains Duplicate | Easy
