@@ -20,9 +20,9 @@
 - [x] String | Valid Anagram | Easy
 
 ### Day 2
-- [ ] HashMap | Contains Duplicate | Easy
-- [ ] Array | Product of Array Except Self | Medium
-- [ ] HashMap | Group Anagrams | Medium
+- [x] HashMap | Contains Duplicate | Easy
+- [x] Array | Product of Array Except Self | Medium
+- [x] HashMap | Group Anagrams | Medium
 
 ### Day 3
 - [ ] HashMap | Longest Consecutive Sequence | Medium
