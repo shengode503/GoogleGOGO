@@ -1,5 +1,5 @@
 # Note:
-     - Input    : strs
+     - Input  : strs
      - Output : list contains a list that stores the strings that has same anagram.
 
 # Brute-force
