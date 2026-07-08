@@ -1,0 +1,39 @@
+    # Note:
+    #   - Input  : nums
+    #   - Output : True if duplicate else False
+
+    # Brute-force
+    #   - Double for loop, iter all the elements in nums and compare it with all the elements right after it.
+    #   - Return True if duplicate, else False
+    #   - Complexity: O(n^2), O(1)
+
+    # How to better resolve it?
+    #   - Using set
+    #   - Iterate nums, if n is not in the set, add n into set, else return True
+    #   - Return False if no duplicate
+    #   - Complexity: O(n), O(n)
+
+    # Coding
+    def solve(nums):
+        seen = set()
+        for n in nums:
+            if n in seen:
+                return True
+            seen.add(n)
+        return False
+
+    # Dry run
+    # nums = [1,2,3,1]
+    #   - n=1, not in set, set=1
+    #   - n=2, not in set, set=1,2
+    #   - n=3, not in set, set=1,2,3
+    #   - n=1, in set, return True
+    #
+    # nums = [1,2,3,4]
+    #   - n=1, not in set, set=1
+    #   - n=2, not in set, set=1,2
+    #   - n=3, not in set, set=1,2,3
+    #   - n=4, not in set, set=1,2,4
+
+    # Edge case
+    # nums = [1], return False
