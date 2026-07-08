@@ -1,0 +1,44 @@
+# Note:
+     - Input    : strs
+     - Output : list contains a list that stores the strings that has same anagram.
+
+# Brute-force
+     - Transfer the string to the list of count of a-z, maximum O(50*n)
+     - compare if the list is the same, O(n^2)
+     - if two string's count list are the same,  they are anagram, O(26)
+     - Complexity: O(n^2), O(n)
+
+# How to better resolve it?
+     - Transfer the string to the list of count of a-z, O(50*n)
+        and convert the type of this list to str, then it will be the key of the hashmap.
+        the value will be the original string
+     - during the for loop, check the key in the hashmap and generate the results
+     - O(n), O(n)
+
+# Coding
+def solve(strs):
+    results = {}
+    for i in range(len(strs)):
+        ori_str = strs[i]
+
+        # transfer the str to the count of a-z as the key of the hashmap
+        key = [0] * 26
+        for char in ori_str:
+            key[ord(char) - ord('a')] += 1
+        key = tuple(key)
+
+        if key in results:
+            results[key].append(ori_str)
+        else:
+            results[key] = [ori_str]
+    return [v for v in results.values()]
+            
+# dry run
+# strs = ["abc","bca","abd"]
+#  - i=0, ori_str=abc, map_str=(1,1,1,...), result[(1,1,1,...)] = ['abc']
+#  - i=1, ori_str=bca, map_str=(1,1,1,...), result[(1,1,1,...)].append('bca')
+#  - i=2, ori_str=abd, map_str=(1,1,0,1,...), result[(1,1,0,1,...)] = ['abd']
+
+# edge case
+# strs = [""], return [[""]]
+# strs = ["abc"], return [["abc"]]
