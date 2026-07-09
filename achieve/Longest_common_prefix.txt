@@ -1,0 +1,51 @@
+# Note:
+#   - Input  : strs
+#   - Output : str that contains the longest common prefix
+
+# Brute-force
+#   - The first str as the initial common prefix
+#   - Iter the rest strs
+#   - Build the new common prefix when the str is the same as initial common prefix, otherwise continue
+#   - return the common prefix
+#   - Complexity: O(n^2), O(n)
+
+# How to better resolve it
+#   - I think the brute-force is the best solution.
+#   - Complexity: O(n^2), O(n), n <= 200
+
+# Coding
+# def solve(strs):
+#     if len(strs) == 1:
+#         return strs[0]
+#
+#     common_prefix = strs[0]
+#
+#     for i in range(1, len(strs)):
+#         string = strs[i]
+#
+#         if common_prefix == "":
+#             return ""
+#
+#         new_common_prefix = []
+#         for j in range(min(len(common_prefix), len(string))):
+#             if string[j] == common_prefix[j]:
+#                 new_common_prefix.append(string[j])
+#             else:
+#                 break
+#         common_prefix = "".join(new_common_prefix)
+#     return common_prefix
+
+# Dry run
+# strs = ["flower", "flow", "flight"]
+#   - common_prefix=flower, string=flow,   s=f, new_common_prefix=f
+#   - common_prefix=flower, string=flow,   s=l, new_common_prefix=fl
+#   - common_prefix=flower, string=flow,   s=o, new_common_prefix=flo
+#   - common_prefix=flower, string=flow,   s=w, new_common_prefix=flo, common_prefix=flo, new_common_prefix=[]
+#   - common_prefix=flo,    string=flight, s=f, new_common_prefix=f
+#   - common_prefix=flo,    string=flight, s=l, new_common_prefix=fl
+#   - common_prefix=flo,    string=flight, s=i, new_common_prefix=fl, common_prefix=fl, new_common_prefix=[]
+#   - return fl
+
+# Edge case
+# strs = [""], return ""
+# strs = ["a"], return "a"
