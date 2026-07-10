@@ -25,14 +25,14 @@
 - [x] HashMap | Group Anagrams | Medium
 
 ### Day 3
-- [ ] HashMap | Longest Consecutive Sequence | Medium
+- [x] HashMap | Longest Consecutive Sequence | Medium
 - [ ] Array | Rotate Array | Medium
-- [ ] String | Longest Common Prefix | Easy
+- [x] String | Longest Common Prefix | Easy
 
 ### Day 4
 - [ ] HashMap | Top K Frequent Elements | Medium
 - [ ] Interval | Merge Intervals | Medium
-- [ ] String | Longest Palindrome | Easy
+- [x] String | Longest Palindrome | Easy
 
 ### Day 5
 - [ ] Prefix Sum | Subarray Sum Equals K | Medium
