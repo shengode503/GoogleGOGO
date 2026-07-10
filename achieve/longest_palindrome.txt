@@ -1,0 +1,44 @@
+# Note:
+#   - Input  : s with uppercase and lowercase characters.
+#   - Output : longest palindrome count
+
+# Brute-force
+#   - Double while loop to iter the characters in s and compare it with the rest of the characters.
+#   - If match count + 1 and another list var to mark it's matched.
+#   - At the end, if any char remaining, count +1
+#   - Complexity: O(n^2), O(n)
+
+# How to better resolve it? Hashmap
+#   - Build the hashmap
+#   - If the count of the char % 2 == 0, count += char_count, else count += char_count - 1
+#   - If any remains, count += 1, else count
+#   - Complexity: O(n), O(n)
+
+# Coding
+def solve(s):
+    count_dict = {}
+    for char in s:
+        count_dict[char] = count_dict.get(char, 0) + 1
+
+    is_odd, result = 0, 0
+    for count in count_dict.values():
+        if count % 2 == 0:
+            result += count
+        else:
+            result += count - 1
+            is_odd += 1
+    return result + 1 if is_odd != 0 else result
+
+# Dry run
+# s = "abccccdd"
+#   - hashmap: a:1, b:1, c:4, d:2
+#   - count=1, is_odd=1
+#   - count=1, is_odd=2
+#   - count=4, result+=4=4, is_odd=2
+#   - count=2, result+=2=6, is_odd=2
+# return 6+1=7
+
+# Edge case
+# s='a', return 1
+# s='', return 0
+# s='bb', return 2
