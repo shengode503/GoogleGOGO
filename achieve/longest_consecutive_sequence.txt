@@ -1,0 +1,65 @@
+# Note:
+#   - Input  : nums
+#   - Output : longest consecutive count
+
+# Brute-force
+#   - set nums
+#   - iter nums with a while loop to iter n + 1, check if n+1 is in set, if n+1 is in set, count + 1 and move to n+2
+#     if n+1 is not in the set, break the while loop. 
+#   - return the maximum count
+#   - Complexity: O(n^2), O(n)
+def solve(nums):
+    nums_lookup = set(nums)
+
+    result = 0
+    for num in nums_lookup:
+        next_num = num
+        count = 0
+        while next_num in nums_lookup:
+            count += 1
+            next_num += 1
+        result = max(result, count)    
+    return result
+
+# How to better resolve it?
+#   - When we need to count the consecutive? Only when num is the first element.
+#     How to know num is the first element? when num-1 is not in the set.
+#   - Complexity: O(n), O(n)
+def solve(nums):
+    nums_lookup = set(nums)
+
+    result = 0
+    for num in nums_lookup:
+        if num -1 not in nums_lookup:
+            next_num = num
+            count = 0
+            while next_num in nums_lookup:
+                count += 1
+                next_num += 1
+            result = max(result, count)    
+    return result
+
+# Dry run
+# Input: nums = [100,4,200,1,3,2]
+#   - set: 100,4,200,1,3,2
+#   - num=100, 100-1 not in set
+#       - next_num=100, in set, count=1
+#       - next_num=101, not in set
+#   - num=4, 4-1 in set, skip
+#   - num=200, 200-1 not in set
+#       - next_num=200, in set, count=1
+#       - next_num=201, not in set
+#   - num=1, 1-1 not in set
+#       - next_num=1, in set, count=1
+#       - next_num=2, in set, count=2
+#       - next_num=3, in set, count=3
+#       - next_num=4, in set, count=4
+#       - next_num=5, not in set
+#   - result = max(1, 4) = 4
+#   - num=3, 3-1 in set, skip
+#   - num=2, 2-1 in set, skip
+#   - return 4
+
+# Edge case
+# Input: nums = [], return 0
+# Input: nums = [1,1,1], return 1
