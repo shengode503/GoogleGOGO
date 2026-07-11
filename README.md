@@ -30,7 +30,7 @@
 - [x] String | Longest Common Prefix | Easy
 
 ### Day 4
-- [ ] HashMap | Top K Frequent Elements | Medium
+- [x] HashMap | Top K Frequent Elements | Medium
 - [ ] Interval | Merge Intervals | Medium
 - [x] String | Longest Palindrome | Easy
 
