@@ -1,0 +1,30 @@
+# Note
+#   - Input   : nums, k
+#   - Ountput : rotate nums
+
+# Brute-force
+#   - Complexity: O(nk), O(n+k) 
+def solve(nums, k):
+    nums = [0] * k % + nums
+    for i in range(k):
+        nums[k-1-i] = nums[-1]
+        del nums[-1]
+    return nums
+
+# How to better resolve it?
+#   - Complexity: O(n), O(1)
+def solve(nums, k):
+    n = len(nums)
+    k %= n
+
+    def reverse(left, right):
+        while left < right:
+            nums[left], nums[right] = nums[right], nums[left]
+            left += 1
+            right -= 1
+
+    reverse(0, n - 1)
+    reverse(0, k - 1)
+    reverse(k, n - 1)
+
+    return nums
