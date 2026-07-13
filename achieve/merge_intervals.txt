@@ -1,0 +1,11 @@
+def solve(intervals):
+    sorted_intervals = sorted(intervals)
+
+    results = [sorted_intervals[0]]
+    for idx in range(1, len(sorted_intervals)):
+        interval = sorted_intervals[idx]
+        if interval[0] <= results[-1][1]:
+            results[-1] = [min(results[-1][0], interval[0]), max(results[-1][1], interval[1])]
+        else:
+            results.append(interval)
+    return results
