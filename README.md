@@ -31,7 +31,7 @@
 
 ### Day 4
 - [x] HashMap | Top K Frequent Elements | Medium
-- [ ] Interval | Merge Intervals | Medium
+- [x] Interval | Merge Intervals | Medium
 - [x] String | Longest Palindrome | Easy
 
 ### Day 5
