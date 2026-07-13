@@ -37,7 +37,7 @@
 ### Day 5
 - [ ] Prefix Sum | Subarray Sum Equals K | Medium
 - [ ] Matrix | Spiral Matrix | Medium
-- [ ] HashMap | Isomorphic Strings | Easy
+- [x] HashMap | Isomorphic Strings | Easy
 
 ### Day 6
 - [ ] Prefix Sum | Pivot Index | Easy
