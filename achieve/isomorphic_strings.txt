@@ -1,0 +1,16 @@
+# Complexity: O(n), O(n)
+def solve(s, t):
+    char_map = {}
+    used_t_chars = set()
+    for idx in range(len(s)):
+        s_char, t_char = s[idx], t[idx]
+        if s_char not in char_map:
+            if t_char in used_t_chars:
+                return False
+
+                har_map[s_char] = t_char
+                used_t_chars.add(t_char)
+            else:
+                if char_map[s_char] != t_char:
+                    return False
+    return True
