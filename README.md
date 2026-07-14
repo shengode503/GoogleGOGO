@@ -40,7 +40,7 @@
 - [x] HashMap | Isomorphic Strings | Easy
 
 ### Day 6
-- [ ] Prefix Sum | Pivot Index | Easy
+- [x] Prefix Sum | Pivot Index | Easy
 - [ ] Matrix | Set Matrix Zeroes | Medium
 - [ ] String | Find All Anagrams in a String | Medium
 
