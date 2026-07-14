@@ -1,0 +1,10 @@
+# Complexity: O(n), O(n)
+def solve(nums):
+    prefix_sum = [0] * len(nums)
+    for i in range(len(nums)):
+        prefix_sum[i] = prefix_sum[i-1] + nums[i]
+
+    for i in range(len(nums)):
+        if prefix_sum[i] - nums[i] == prefix_sum[-1] - prefix_sum[i]:
+            return i
+    return -1
