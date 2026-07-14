@@ -42,7 +42,7 @@
 ### Day 6
 - [x] Prefix Sum | Pivot Index | Easy
 - [ ] Matrix | Set Matrix Zeroes | Medium
-- [ ] String | Find All Anagrams in a String | Medium
+- [x] String | Find All Anagrams in a String | Medium
 
 ### Day 7 (Review)
 - [ ] Review HashMap
