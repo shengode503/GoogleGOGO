@@ -1,0 +1,21 @@
+# Complexity: O(s+p), O(1)
+def solve(s, p):
+    #Complexity: O(p), O(1) 
+    p_char_list = [0] * 26
+    for char in p:
+        p_char_list[ord(char) - ord('a')] += 1
+
+    #Complexity: O(s), O(1), 
+    # Dict comparison is O(n), but has been restricted to 26. So, it's O(1)
+    idx = 0
+    s_char_list = [0] * 26
+    results = []
+    while idx < len(s):
+        s_char_list[ord(s[idx]) - ord('a')] += 1
+        
+        if idx >= len(p) - 1:
+            if s_char_list == p_char_list:
+                results.append(idx - len(p) + 1)
+            s_char_list[ord(s[idx - len(p) + 1]) - ord('a')] -= 1
+        idx += 1
+    return results
