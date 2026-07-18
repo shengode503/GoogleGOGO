@@ -16,6 +16,7 @@
 
 ### Day 1
 - [x] HashMap | Two Sum | Easy
+  - [x] Review   
 - [x] Array | Best Time to Buy and Sell Stock | Easy
 - [x] String | Valid Anagram | Easy
 
