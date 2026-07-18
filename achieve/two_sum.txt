@@ -26,15 +26,15 @@ def solve(nums, t):
 
 # Dry run
 #   1. nums = [2,7,11,15], target = 9
-#        - 2 -> 9-2 not in seem -> seem[2] = 0
-#        - 7 -> 9-7 in seem -> return [1, 0]
+#        - 2 -> 9-2 not in seen -> seen[2] = 0
+#        - 7 -> 9-7 in seen -> return [1, 0]
 #
 #   2. nums = [2, 3, 4], target = 8
-#        - 2 -> 8-2 not in seem -> seem[2] = 0
-#        - 3 -> 8-3 not in seem -> seem[3] = 1
-#        - 4 -> 8-4 not in seem -> seem[4] = 2
+#        - 2 -> 8-2 not in seen -> seen[2] = 0
+#        - 3 -> 8-3 not in seen -> seen[3] = 1
+#        - 4 -> 8-4 not in seen -> seen[4] = 2
 
 # Consider edge cases
 #   1. nums = [3,3], target = 6
-#        - 3 -> 6-3 not in seem -> seem[3] = 0
-#        - 3 -> 6-3 in seem -> return [1, 0]
+#        - 3 -> 6-3 not in seen -> seen[3] = 0
+#        - 3 -> 6-3 in seen -> return [1, 0]
