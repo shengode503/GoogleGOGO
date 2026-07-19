@@ -34,6 +34,7 @@
 - [x] HashMap | Longest Consecutive Sequence | Medium
   - [x] Review   
 - [x] Array | Rotate Array | Medium
+  - [x] Review  
 - [x] String | Longest Common Prefix | Easy
   - [x] Review   
 
