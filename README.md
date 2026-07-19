@@ -57,6 +57,7 @@
 - [x] Prefix Sum | Pivot Index | Easy
   - [x] Review 
 - [x] Matrix | Set Matrix Zeroes | Medium
+  - [x] Review 
 - [x] String | Find All Anagrams in a String | Medium
 
 ### Day 7 (Review)
