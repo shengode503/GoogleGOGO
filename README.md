@@ -48,6 +48,7 @@
 
 ### Day 6
 - [x] Prefix Sum | Pivot Index | Easy
+  - [x] Review 
 - [x] Matrix | Set Matrix Zeroes | Medium
 - [x] String | Find All Anagrams in a String | Medium
 
