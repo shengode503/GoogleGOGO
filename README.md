@@ -31,6 +31,7 @@
 - [x] HashMap | Longest Consecutive Sequence | Medium
 - [x] Array | Rotate Array | Medium
 - [x] String | Longest Common Prefix | Easy
+  - [x] Review   
 
 ### Day 4
 - [x] HashMap | Top K Frequent Elements | Medium
