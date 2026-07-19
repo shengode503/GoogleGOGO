@@ -20,6 +20,7 @@
 - [x] Array | Best Time to Buy and Sell Stock | Easy
   - [x] Review   
 - [x] String | Valid Anagram | Easy
+  - [x] Review   
 
 ### Day 2
 - [x] HashMap | Contains Duplicate | Easy
