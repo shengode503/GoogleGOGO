@@ -32,6 +32,7 @@
 
 ### Day 3
 - [x] HashMap | Longest Consecutive Sequence | Medium
+  - [x] Review   
 - [x] Array | Rotate Array | Medium
 - [x] String | Longest Common Prefix | Easy
   - [x] Review   
