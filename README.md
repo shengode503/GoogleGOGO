@@ -28,6 +28,7 @@
 - [x] Array | Product of Array Except Self | Medium
   - [x] Review 
 - [x] HashMap | Group Anagrams | Medium
+  - [x] Review   
 
 ### Day 3
 - [x] HashMap | Longest Consecutive Sequence | Medium
