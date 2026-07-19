@@ -26,6 +26,7 @@
 - [x] HashMap | Contains Duplicate | Easy
   - [x] Review   
 - [x] Array | Product of Array Except Self | Medium
+  - [x] Review 
 - [x] HashMap | Group Anagrams | Medium
 
 ### Day 3
