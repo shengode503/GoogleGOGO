@@ -71,7 +71,7 @@
 ## Week 2 - Two Pointer / Sliding Window / Stack / Linked List
 
 ### Day 8
-- [ ] Two Pointer | Valid Palindrome | Easy
+- [x] Two Pointer | Valid Palindrome | Easy
 - [ ] Sliding Window | Longest Substring Without Repeating Characters | Medium
 - [ ] Stack | Valid Parentheses | Easy
 
