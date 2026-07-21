@@ -76,7 +76,7 @@
 - [x] Stack | Valid Parentheses | Easy
 
 ### Day 9
-- [ ] Two Pointer | Move Zeroes | Easy
+- [x] Two Pointer | Move Zeroes | Easy
 - [ ] Sliding Window | Permutation in String | Medium
 - [ ] Stack | Min Stack | Medium
 
