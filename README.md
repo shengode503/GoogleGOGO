@@ -78,7 +78,7 @@
 ### Day 9
 - [x] Two Pointer | Move Zeroes | Easy
 - [ ] Sliding Window | Permutation in String | Medium
-- [ ] Stack | Min Stack | Medium
+- [x] Stack | Min Stack | Medium
 
 ### Day 10
 - [ ] Two Pointer | Container With Most Water | Medium
