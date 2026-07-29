@@ -1,0 +1,29 @@
+# Complexity: O(n), O(n)
+# Operatoin time complexity: O(1)
+def solve(input_list):
+    operations, values = input_list[0], input_list[1]
+
+    curr_min = []
+    stack , results = [], []
+    for i in range(len(operations)):
+        operation = operations[i]
+
+        if operation == 'push':
+            value = values[i][0]
+            if not curr_min:
+               curr_min.append(value)
+            else:
+               curr_min.append(min(value, curr_min[-1]))
+            stack.append(value)
+            results.append(None)
+        elif operation == 'top':
+            results.append(stack[-1])
+        elif operation == 'pop':
+            stack.pop()
+            curr_min.pop()
+            results.append(None)
+        elif operation == 'getMin':
+            results.append(curr_min[-1])
+        elif operation == 'MinStack':
+            results.append(None)
+    return results
