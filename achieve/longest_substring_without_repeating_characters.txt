@@ -1,0 +1,20 @@
+# Complexity: O(n), O(min(n, character set size))
+ def solve(strings):
+     start, count, result = 0, 0, 0
+     position, positions = 0, {}
+     while position < len(strings):
+         char = strings[position]
+         if char not in positions:
+             count += 1
+             positions[char] = position
+         else:
+            if positions[char] < start:
+                count += 1
+                positions[char] = position
+            else:
+                start = positions[char] + 1
+                count = position - positions[char]
+                positions[char] = position
+         position += 1
+         result = max(result, count)
+     return result
