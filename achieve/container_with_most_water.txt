@@ -1,0 +1,12 @@
+# Complexity: O(n), O(1)
+def solve(height):
+    start, end = 0, len(height) - 1
+    result = 0
+    while start < end:
+        volume = min(height[end], height[start]) * (end - start)
+        result = max(result, volume)
+        if height[start] > height[end]:
+            end -= 1
+        else:
+            start += 1
+    return result
