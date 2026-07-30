@@ -72,7 +72,7 @@
 
 ### Day 8
 - [x] Two Pointer | Valid Palindrome | Easy
-- [ ] Sliding Window | Longest Substring Without Repeating Characters | Medium
+- [x] Sliding Window | Longest Substring Without Repeating Characters | Medium
 - [x] Stack | Valid Parentheses | Easy
 
 ### Day 9
