@@ -96,7 +96,7 @@
 - [ ] Linked List | Add Two Numbers | Medium
 
 ### Day 13
-- [ ] Stack | Decode String | Medium
+- [x] Stack | Decode String | Medium
 - [ ] Stack | Evaluate Reverse Polish Notation | Medium
 - [ ] Sliding Window | Max Consecutive Ones III | Medium
 
