@@ -1,0 +1,25 @@
+# Complexity: O(m+n), O(m+n)
+def solve(s):
+    stack, start_list = [], []
+    for idx, char in enumerate(s):
+        if char == '[':
+            stack.append(char)
+            start_list.append(len(stack) - 1)
+        elif char == ']':
+            start = start_list.pop()
+
+            number_start = start - 1
+            while number_start >= 0 and stack[number_start].isdigit():
+                number_start -= 1
+            number_start += 1
+            count = int("".join(stack[number_start:start]))
+
+            encode = ""
+            for j in range(start +1, len(stack)):
+                encode += stack[j]
+            decode = count * encode
+            stack = stack[:number_start]
+            stack += decode
+        else:
+            stack.append(char)
+    return "".join(stack)
