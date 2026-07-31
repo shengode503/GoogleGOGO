@@ -83,7 +83,7 @@
 ### Day 10
 - [x] Two Pointer | Container With Most Water | Medium
 - [ ] Sliding Window | Minimum Window Substring | Medium
-- [ ] Monotonic Stack | Daily Temperatures | Medium
+- [x] Monotonic Stack | Daily Temperatures | Medium
 
 ### Day 11
 - [ ] Linked List | Reverse Linked List | Easy
