@@ -98,7 +98,7 @@
 ### Day 13
 - [x] Stack | Decode String | Medium
 - [x] Stack | Evaluate Reverse Polish Notation | Medium
-- [ ] Sliding Window | Max Consecutive Ones III | Medium
+- [x] Sliding Window | Max Consecutive Ones III | Medium
 
 ### Day 14 (Review)
 - [ ] Review Two Pointer
