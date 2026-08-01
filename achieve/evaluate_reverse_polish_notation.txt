@@ -1,0 +1,26 @@
+# Complexity: O(n), O(n)
+def solve(tokens):
+    stack = []
+    for num in tokens:
+        if num == "+":
+            num2 = stack.pop()
+            num1 = stack.pop()
+            stack.append(num1 + num2)
+
+        elif num == "-":
+            num2 = stack.pop()
+            num1 = stack.pop()
+            stack.append(num1 - num2)
+
+        elif num == "*":
+            num2 = stack.pop()
+            num1 = stack.pop()
+            stack.append(num1 * num2)
+
+        elif num == "/":
+            num2 = stack.pop()
+            num1 = stack.pop()
+            stack.append(int(num1 / num2))
+        else:
+            stack.append(int(num))
+    return stack[0]
