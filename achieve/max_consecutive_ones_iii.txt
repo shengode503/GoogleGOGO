@@ -1,0 +1,17 @@
+# Complexity: O(n), O(n)
+def solve(nums, k):
+    start, end, result  = 0, 0, 0
+    k_count, zero_idx, zero_idx_list = 0, 0, []
+    while end < len(nums):
+        n = nums[end]
+        if n == 0:
+            k_count += 1
+            zero_idx_list.append(end)
+
+            if k_count > k:
+                start = zero_idx_list[zero_idx] + 1
+                zero_idx += 1
+                k_count -= 1
+        result = max(result, end - start + 1)
+        end += 1
+    return result
