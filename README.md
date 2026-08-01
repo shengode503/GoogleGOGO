@@ -77,7 +77,7 @@
 
 ### Day 9
 - [x] Two Pointer | Move Zeroes | Easy
-- [ ] Sliding Window | Permutation in String | Medium
+- [x] Sliding Window | Permutation in String | Medium
 - [x] Stack | Min Stack | Medium
 
 ### Day 10
