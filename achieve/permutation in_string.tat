@@ -1,0 +1,26 @@
+# Complexity: O(n + m), O(1)
+def solve(s1, s2):
+    if len(s1) > len(s2):
+        return False
+
+    s1_count = [0] * 26
+    for char in s1:
+        s1_count[ord(char) - ord('a')] += 1
+
+    sub_s2_count = [0] * 26
+    for char in s2[:len(s1)]:
+        sub_s2_count[ord(char) - ord('a')] += 1
+
+    start, end = 0, len(s1)
+
+    while end < len(s2):
+        if s1_count == sub_s2_count:
+            return True
+
+        sub_s2_count[ord(s2[start]) - ord('a')] -= 1
+        sub_s2_count[ord(s2[end]) - ord('a')] += 1
+
+        start += 1
+        end += 1
+
+    return s1_count == sub_s2_count
