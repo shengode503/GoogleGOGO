@@ -166,7 +166,7 @@
 ### Day 25
 - [x] Interval | Insert Interval | Medium
 - [x] Array | Sort Colors | Medium
-- [ ] Binary Search | Search a 2D Matrix | Medium
+- [x] Binary Search | Search a 2D Matrix | Medium
 
 ### Day 26
 - [ ] Design | LRU Cache | Medium
