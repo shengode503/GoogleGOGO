@@ -1,0 +1,36 @@
+# Complexity: O(m+n), O(m+n)
+def solve(s, t):
+    t_count = {}
+    for char in t:
+        t_count[char] = t_count.get(char, 0) + 1
+
+    sub_s_count = {}
+    start, end, meet_count = 0, 0, 0
+    min_length, result_start = float("inf"), 0
+    while end < len(s):
+        char = s[end]
+        sub_s_count[char] = sub_s_count.get(char, 0) + 1
+
+        if char in t_count and sub_s_count[char] == t_count[char]:
+            meet_count += 1
+
+        if meet_count != len(t_count):
+            end += 1
+        else:
+            while meet_count == len(t_count):
+                if end - start + 1 < min_length:
+                    min_length = end - start + 1
+                    result_start = start
+
+                left_char = s[start]
+                sub_s_count[left_char] -= 1
+
+                if (left_char in t_count and sub_s_count[left_char] < t_count[left_char]):
+                    meet_count -= 1
+                start += 1
+            end += 1
+
+    if min_length == float("inf"):
+        return ""
+
+    return s[result_start:result_start + min_length]         
