@@ -1,0 +1,27 @@
+# Complexity: O(n), O(n)
+def solve(intervals, newInterval):
+    results = []
+    prev_interval = newInterval
+    idx = 0
+
+    while idx < len(intervals):
+        interval = intervals[idx]
+        start, end = interval[0], interval[1]
+
+        if end < prev_interval[0]:
+            results.append(interval)
+
+        elif start > prev_interval[1]:
+            results.append(prev_interval)
+            results += intervals[idx:]
+            return results
+
+        else:
+            new_start = min(start, prev_interval[0])
+            new_end = max(end, prev_interval[1])
+            prev_interval = [new_start, new_end]
+
+        idx += 1
+
+    results.append(prev_interval)
+    return results
