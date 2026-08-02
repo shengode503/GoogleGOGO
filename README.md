@@ -164,8 +164,8 @@
 - [ ] Backtracking | Combination Sum | Medium
 
 ### Day 25
-- [ ] Interval | Insert Interval | Medium
-- [ ] Array | Sort Colors | Medium
+- [x] Interval | Insert Interval | Medium
+- [x] Array | Sort Colors | Medium
 - [ ] Binary Search | Search a 2D Matrix | Medium
 
 ### Day 26
