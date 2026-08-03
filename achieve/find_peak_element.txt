@@ -1,0 +1,17 @@
+# Complexity: O(log n), O(n)
+def solve(nums):
+    start, end = 0, len(nums) - 1
+
+    while start <= end:
+        mid = start + (end - start) // 2
+
+        left = nums[mid - 1] if mid > 0 else float("-inf")
+        right = nums[mid + 1] if mid < len(nums) - 1 else float("-inf")
+
+        if left < nums[mid] > right:
+            return mid
+        elif right > nums[mid]:
+            start = mid + 1
+        else:
+            end = mid - 1    
+    return start
