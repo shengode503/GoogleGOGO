@@ -80,8 +80,11 @@
 
 ### Day 9
 - [x] Two Pointer | Move Zeroes | Easy
+  - [x] Review  
 - [x] Sliding Window | Permutation in String | Medium
+  - [x] Review  
 - [x] Stack | Min Stack | Medium
+  - [x] Review  
 
 ### Day 10
 - [x] Two Pointer | Container With Most Water | Medium
