@@ -131,12 +131,12 @@
 - [ ] Tree DFS | Validate Binary Search Tree | Medium
 
 ### Day 18
-- [ ] Binary Search | Binary Search | Easy
-- [ ] Binary Search | Search Insert Position | Easy
-- [ ] Binary Search | Search in Rotated Sorted Array | Medium
+- [x] Binary Search | Binary Search | Easy
+- [x] Binary Search | Search Insert Position | Easy
+- [x] Binary Search | Search in Rotated Sorted Array | Medium
 
 ### Day 19
-- [ ] Binary Search | Find Peak Element | Medium
+- [x] Binary Search | Find Peak Element | Medium
 - [ ] Heap | Kth Largest Element in an Array | Medium
 - [ ] Heap | Last Stone Weight | Easy
 
