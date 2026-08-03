@@ -177,7 +177,7 @@
 ### Day 26
 - [ ] Design | LRU Cache | Medium
 - [ ] Heap | Kth Largest Element in a Stream | Easy
-- [ ] HashMap | Time Based Key-Value Store | Medium
+- [x] HashMap | Time Based Key-Value Store | Medium
 
 ### Day 27
 - [ ] Backtracking | Word Search | Medium
