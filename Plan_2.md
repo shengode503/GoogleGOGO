@@ -2,12 +2,12 @@
 
 ## Day 1 - HashMap / Array
 
-- [ ] HashMap | Two Sum | Easy
-- [ ] Array | Best Time to Buy and Sell Stock | Easy
-- [ ] String | Valid Anagram | Easy
-- [ ] HashMap | Contains Duplicate | Easy
-- [ ] Array | Product of Array Except Self | Medium
-- [ ] HashMap | Group Anagrams | Medium
+- [x] HashMap | Two Sum | Easy
+- [x] Array | Best Time to Buy and Sell Stock | Easy
+- [x] String | Valid Anagram | Easy
+- [x] HashMap | Contains Duplicate | Easy
+- [x] Array | Product of Array Except Self | Medium
+- [x] HashMap | Group Anagrams | Medium
 
 ---
 
@@ -40,7 +40,7 @@
 - [ ] Stack | Next Greater Element I | Easy
 - [ ] Interval | Merge Intervals | Medium
 - [ ] Interval | Insert Interval | Medium
-- [ ] Binary Search | Binary Search | Easy
+- [x] Binary Search | Binary Search | Easy
 
 ---
 
