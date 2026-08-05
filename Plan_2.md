@@ -24,12 +24,12 @@
 
 ## Day 3 - Two Pointer / Stack
 
-- [ ] Two Pointer | Valid Palindrome | Easy
-- [ ] Two Pointer | Move Zeroes | Easy
-- [ ] Two Pointer | Container With Most Water | Medium
+- [x] Two Pointer | Valid Palindrome | Easy
+- [x] Two Pointer | Move Zeroes | Easy
+- [x] Two Pointer | Container With Most Water | Medium
 - [ ] Two Pointer | 3Sum | Medium
-- [ ] Stack | Valid Parentheses | Easy
-- [ ] Stack | Min Stack | Medium
+- [x] Stack | Valid Parentheses | Easy
+- [x] Stack | Min Stack | Medium
 
 ---
 
