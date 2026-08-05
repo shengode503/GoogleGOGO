@@ -37,9 +37,9 @@
 
 - [x] Monotonic Stack | Daily Temperatures | Medium
 - [x] Stack | Evaluate Reverse Polish Notation | Medium
-- [ ] Stack | Next Greater Element I | Easy
-- [ ] Interval | Merge Intervals | Medium
-- [ ] Interval | Insert Interval | Medium
+- [x] Stack | Next Greater Element I | Easy
+- [x] Interval | Merge Intervals | Medium
+- [x] Interval | Insert Interval | Medium
 - [x] Binary Search | Binary Search | Easy
 
 ---
