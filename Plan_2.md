@@ -35,8 +35,8 @@
 
 ## Day 4 - Stack / Binary Search / Interval
 
-- [ ] Monotonic Stack | Daily Temperatures | Medium
-- [ ] Stack | Evaluate Reverse Polish Notation | Medium
+- [x] Monotonic Stack | Daily Temperatures | Medium
+- [x] Stack | Evaluate Reverse Polish Notation | Medium
 - [ ] Stack | Next Greater Element I | Easy
 - [ ] Interval | Merge Intervals | Medium
 - [ ] Interval | Insert Interval | Medium
