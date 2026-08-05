@@ -16,9 +16,9 @@
 - [x] Sliding Window | Longest Substring Without Repeating Characters | Medium
 - [x] Sliding Window | Permutation in String | Medium
 - [x] Sliding Window | Find All Anagrams in a String | Medium
-- [ ] Sliding Window | Longest Repeating Character Replacement | Medium
+- [x] Sliding Window | Longest Repeating Character Replacement | Medium
 - [ ] Sliding Window | Minimum Size Subarray Sum | Medium
-- [ ] Prefix Sum | Subarray Sum Equals K | Medium
+- [x] Prefix Sum | Subarray Sum Equals K | Medium
 
 ---
 
