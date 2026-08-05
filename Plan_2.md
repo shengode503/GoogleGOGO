@@ -46,9 +46,9 @@
 
 ## Day 5 - Binary Search / Review
 
-- [ ] Binary Search | Search in Rotated Sorted Array | Medium
-- [ ] Binary Search | Find First and Last Position of Element in Sorted Array | Medium
-- [ ] Array | Longest Consecutive Sequence | Medium
-- [ ] Array | Rotate Array | Medium
+- [x] Binary Search | Search in Rotated Sorted Array | Medium
+- [x] Binary Search | Find First and Last Position of Element in Sorted Array | Medium
+- [x] Array | Longest Consecutive Sequence | Medium
+- [x] Array | Rotate Array | Medium
 - [ ] Review Weak Problems
 - [ ] Mock Interview (45~60 mins)
