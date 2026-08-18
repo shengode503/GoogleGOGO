@@ -1,0 +1,9 @@
+# Complexity: O(n), O(1)
+def solve(nums, val):
+    delete_idx = 0
+    for i in range(len(nums)):
+        if nums[i] != val:
+            nums[delete_idx] = nums[i]
+            delete_idx += 1
+    return delete_idx
+
