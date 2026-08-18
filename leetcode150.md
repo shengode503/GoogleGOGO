@@ -2,7 +2,7 @@
 
 ## Array / String
 
-- [ ] Array | Merge Sorted Array | Easy
+- [x] Array | Merge Sorted Array | Easy
   - [ ] Review
 - [ ] Array | Remove Element | Easy
   - [ ] Review
