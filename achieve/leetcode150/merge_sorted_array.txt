@@ -1,0 +1,14 @@
+# Complexity: O(m+n), O(1)
+def solve(nums1, nums2, m, n):
+    idx1, idx2 = m - 1, n - 1
+    i = len(nums1) - 1
+    while idx2 >= 0:
+        if idx1 != -1 and nums1[idx1] > nums2[idx2]:
+            nums1[i] = nums1[idx1]
+            idx1 -= 1
+        else:
+            nums1[i] = nums2[idx2]
+            idx2 -= 1
+        i -= 1
+    return nums1
+
