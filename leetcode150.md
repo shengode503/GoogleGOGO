@@ -4,7 +4,7 @@
 
 - [x] Array | Merge Sorted Array | Easy
   - [ ] Review
-- [ ] Array | Remove Element | Easy
+- [x] Array | Remove Element | Easy
   - [ ] Review
 - [ ] Array | Remove Duplicates from Sorted Array | Easy
   - [ ] Review
