@@ -8,7 +8,7 @@
   - [ ] Review
 - [x] Array | Remove Duplicates from Sorted Array | Easy
   - [ ] Review
-- [ ] Array | Remove Duplicates from Sorted Array II | Medium
+- [x] Array | Remove Duplicates from Sorted Array II | Medium
   - [ ] Review
 - [ ] Array | Majority Element | Easy
   - [ ] Review
