@@ -12,9 +12,9 @@
   - [ ] Review
 - [x] Array | Majority Element | Easy
   - [ ] Review
-- [ ] Array | Rotate Array | Medium
+- [x] Array | Rotate Array | Medium
   - [ ] Review
-- [ ] Array | Best Time to Buy and Sell Stock | Easy
+- [x] Array | Best Time to Buy and Sell Stock | Easy
   - [ ] Review
 - [ ] Array | Best Time to Buy and Sell Stock II | Medium
   - [ ] Review
