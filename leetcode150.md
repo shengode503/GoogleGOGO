@@ -14,8 +14,8 @@
   - [ ] Review
 - [ ] Array | Rotate Array | Medium
   - [ ] Review
-- [x] Array | Best Time to Buy and Sell Stock | Easy
-  - [x] Review
+- [ ] Array | Best Time to Buy and Sell Stock | Easy
+  - [ ] Review
 - [ ] Array | Best Time to Buy and Sell Stock II | Medium
   - [ ] Review
 - [ ] Array | Jump Game | Medium
