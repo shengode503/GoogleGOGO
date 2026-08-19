@@ -10,7 +10,7 @@
   - [ ] Review
 - [x] Array | Remove Duplicates from Sorted Array II | Medium
   - [ ] Review
-- [ ] Array | Majority Element | Easy
+- [x] Array | Majority Element | Easy
   - [ ] Review
 - [ ] Array | Rotate Array | Medium
   - [ ] Review
