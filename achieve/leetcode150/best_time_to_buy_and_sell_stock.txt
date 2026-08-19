@@ -1,0 +1,13 @@
+# Complexity: O(n), O(1)
+def solve(prices):
+    buy, sell = float('Inf'), float('-Inf')
+    result = 0
+    for price in prices:
+        if price < buy:
+            buy = price
+            sell = price
+        if price > sell:
+            sell = price
+        result = max(result, sell - buy)
+    return result
+
