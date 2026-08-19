@@ -6,7 +6,7 @@
   - [ ] Review
 - [x] Array | Remove Element | Easy
   - [ ] Review
-- [ ] Array | Remove Duplicates from Sorted Array | Easy
+- [x] Array | Remove Duplicates from Sorted Array | Easy
   - [ ] Review
 - [ ] Array | Remove Duplicates from Sorted Array II | Medium
   - [ ] Review
