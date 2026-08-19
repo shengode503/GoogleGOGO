@@ -1,0 +1,13 @@
+# Complexity: O(n), O(1)
+def solve(nums):
+    replace_idx = -1
+    prev_num = nums[0]
+    for i in range(1, len(nums)):
+        curr_num = nums[i]
+        if replace_idx == -1 and prev_num == curr_num:
+            replace_idx = i
+        if replace_idx != -1 and prev_num != curr_num:
+            nums[i], nums[replace_idx] = nums[replace_idx], nums[i]
+            replace_idx += 1
+        prev_num = curr_num
+    return len(nums) if replace_idx == -1 else replace_idx
