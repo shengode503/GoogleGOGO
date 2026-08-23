@@ -1,0 +1,12 @@
+# Complexity: O(n), O(1)
+def solve(nums):
+    max_step = 0
+    for i in range(len(nums)):
+        if i > max_step:
+            return False
+
+        max_step = max(max_step, i + nums[i])
+        if max_step >= len(nums) - 1:
+            return True    
+    return False
+
