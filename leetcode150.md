@@ -18,11 +18,11 @@
   - [ ] Review
 - [x] Array | Best Time to Buy and Sell Stock II | Medium
   - [ ] Review
-- [ ] Array | Jump Game | Medium
+- [x] Array | Jump Game | Medium
   - [ ] Review
 - [ ] Array | Jump Game II | Medium
   - [ ] Review
-- [ ] Array | H-Index | Medium
+- [x] Array | H-Index | Medium
   - [ ] Review
 - [ ] Array | Insert Delete GetRandom O(1) | Medium
   - [ ] Review
