@@ -34,7 +34,7 @@
   - [ ] Review
 - [ ] Array | Trapping Rain Water | Hard
   - [ ] Review
-- [ ] String | Roman to Integer | Easy
+- [x] String | Roman to Integer | Easy
   - [ ] Review
 - [ ] String | Integer to Roman | Medium
   - [ ] Review
