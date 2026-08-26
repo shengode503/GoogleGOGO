@@ -38,7 +38,7 @@
   - [ ] Review
 - [ ] String | Integer to Roman | Medium
   - [ ] Review
-- [ ] String | Length of Last Word | Easy
+- [x] String | Length of Last Word | Easy
   - [ ] Review
 - [ ] String | Longest Common Prefix | Easy
   - [ ] Review
