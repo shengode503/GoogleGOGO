@@ -26,7 +26,7 @@
   - [ ] Review
 - [x] Array | Insert Delete GetRandom O(1) | Medium
   - [ ] Review
-- [ ] Array | Product of Array Except Self | Medium
+- [x] Array | Product of Array Except Self | Medium
   - [ ] Review
 - [ ] Array | Gas Station | Medium
   - [ ] Review
