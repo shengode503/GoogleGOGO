@@ -1,0 +1,15 @@
+# Complexity: O(n), O(n)
+def solve(nums):
+    forward_prefix = [1]  * len(nums)
+    for i in range(1, len(nums)):
+        forward_prefix[i] = nums[i-1] * forward_prefix[i-1]
+
+    backward_prefix = [1]  * len(nums)
+    for i in range(len(nums) - 2, -1, -1):
+        backward_prefix[i] = nums[i + 1] * backward_prefix[i+1]
+
+    results = []
+    for i in range(len(nums)):
+        results.append(forward_prefix[i] * backward_prefix[i])
+    return results
+
