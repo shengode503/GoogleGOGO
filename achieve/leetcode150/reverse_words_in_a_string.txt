@@ -1,0 +1,6 @@
+# Complexity: O(n), O(n)
+def solve(s):
+    words = s.strip().split()
+    words = words[::-1]
+    return " ".join(words)
+
