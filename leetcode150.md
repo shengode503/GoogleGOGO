@@ -42,7 +42,7 @@
   - [ ] Review
 - [ ] String | Longest Common Prefix | Easy
   - [ ] Review
-- [ ] String | Reverse Words in a String | Medium
+- [x] String | Reverse Words in a String | Medium
   - [ ] Review
 - [ ] String | Zigzag Conversion | Medium
   - [ ] Review
