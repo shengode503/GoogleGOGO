@@ -24,7 +24,7 @@
   - [ ] Review
 - [x] Array | H-Index | Medium
   - [ ] Review
-- [ ] Array | Insert Delete GetRandom O(1) | Medium
+- [x] Array | Insert Delete GetRandom O(1) | Medium
   - [ ] Review
 - [ ] Array | Product of Array Except Self | Medium
   - [ ] Review
