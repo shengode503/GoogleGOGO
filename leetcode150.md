@@ -40,7 +40,7 @@
   - [ ] Review
 - [x] String | Length of Last Word | Easy
   - [ ] Review
-- [ ] String | Longest Common Prefix | Easy
+- [x] String | Longest Common Prefix | Easy
   - [ ] Review
 - [x] String | Reverse Words in a String | Medium
   - [ ] Review
