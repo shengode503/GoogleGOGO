@@ -1,0 +1,24 @@
+# Complexity: O(n), O(n)
+def solve(s, numRows):
+    if numRows == 1:
+        return s
+
+    results = [[] for _ in range(numRows)]
+    add_step, step = True, 0
+    for string in s:
+        results[step].append(string)
+
+        if step == 0:
+            add_step = True
+        if step == numRows - 1:
+            add_step = False
+
+        if add_step:
+            step += 1
+        else:
+            step -= 1
+    flat_result = []
+    for result in results:
+        flat_result += result 
+    return "".join(flat_result)
+
