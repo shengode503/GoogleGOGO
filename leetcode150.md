@@ -44,7 +44,7 @@
   - [ ] Review
 - [x] String | Reverse Words in a String | Medium
   - [ ] Review
-- [ ] String | Zigzag Conversion | Medium
+- [x] String | Zigzag Conversion | Medium
   - [ ] Review
 - [ ] String | Find the Index of the First Occurrence in a String | Easy
   - [ ] Review
